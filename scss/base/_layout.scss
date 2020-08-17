@@ -1,0 +1,28 @@
+/* ============================================= */
+/*                   Layout                      */
+/* ============================================= */
+
+body {
+	background-color: $lightgrey;
+}
+
+h1 {
+	text-align: center;
+	margin-top: 21px;
+}
+
+.gallery {
+	max-width: 860px;
+	margin: auto;
+	margin-top: 25px;
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+	gap: 20px;
+}
+
+input {
+	display: block;
+	margin: auto;
+	font-size: 1.5em;
+	font-family: sans-serif;
+}
