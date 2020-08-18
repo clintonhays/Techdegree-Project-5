@@ -4,8 +4,7 @@ const dataCaptions = Array.from(document.querySelectorAll('a[data-caption]'));
 
 searchBar.addEventListener('keyup', (e) => {
 	const searchString = e.target.value.toLowerCase();
-	console.log(searchString);
-	const filteredPics = dataCaptions.filter((a) => {
+	dataCaptions.filter((a) => {
 		if (!a.dataset.caption.toLowerCase().includes(searchString)) {
 			a.style.display = 'none';
 		}
