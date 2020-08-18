@@ -368,6 +368,7 @@ h1 {
   max-width: 860px;
   margin: auto;
   margin-top: 25px;
+  padding: 50px;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
   gap: 20px;

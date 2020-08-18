@@ -1,8 +1,6 @@
 const searchBar = document.getElementById('searchBar');
-console.log(searchBar);
 
 const dataCaptions = Array.from(document.querySelectorAll('a[data-caption]'));
-console.log(dataCaptions);
 
 searchBar.addEventListener('keyup', (e) => {
 	const searchString = e.target.value.toLowerCase();
@@ -11,7 +9,9 @@ searchBar.addEventListener('keyup', (e) => {
 		if (!a.dataset.caption.toLowerCase().includes(searchString)) {
 			a.style.display = 'none';
 		}
+		else if (a.dataset.caption.toLowerCase().includes(searchString)) {
+			a.style.display = 'initial';
+		}
 		return a.dataset.caption.toLowerCase().includes(searchString);
 	});
-	console.log(filteredPics);
 });
