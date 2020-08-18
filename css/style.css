@@ -396,13 +396,16 @@ h1 {
 /* ============================================= */
 /*               Image Styles                    */
 /* ============================================= */
-img {
-  border-radius: 5%;
+a {
   opacity: 0.8;
   transition: 0.5s;
 }
 
-img:hover {
+a:hover {
   opacity: 1;
+}
+
+img {
+  border-radius: 5%;
 }
 /*# sourceMappingURL=style.css.map */
